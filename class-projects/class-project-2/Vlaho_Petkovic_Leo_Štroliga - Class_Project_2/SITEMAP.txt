@@ -1,0 +1,257 @@
+U OVOM TEXT DOKUMENTU PRIKAZAN JE POSTUPAK DOBIVANJA SITEMAPE. TO UKLJUČUJE PROCESE
+GENERIRANJA TEMA, CARD SORTINGA TE IZRADU SITEMAPE NA TEMELJU SVEGA NAVEDENOG. SITEMAPA
+REALIZIRANA JE KORIŠTENJEM FIGMA ALATA.
+
+LINK NA SITEMAPU U FIGMI:  https://www.figma.com/file/aCTXNYuVU1QJ8GkQXdfO08/sitemap_v_1.0?type=whiteboard&t=YS7M9GBXdHmNeIlP-1
+
+
+
+***Generiranje 15 tema vezanih za vegetarijanske proizvode pomoću ChatGpt
+
+Input: Propose a set of 15 topics related to vegetarian products.
+
+Output:
+
+Plant-Based Proteins: Exploring different sources of plant-based proteins such as tofu, tempeh, legumes, and quinoa, and their nutritional benefits.
+
+Vegetarian Cooking Tips: Providing cooking techniques, tips, and recipes tailored for vegetarian and vegan diets.
+
+Ethical Farming Practices: Discussing sustainable and ethical farming methods used in the production of vegetarian products.
+
+Diverse Vegetarian Diets: Exploring various types of vegetarian diets including lacto-vegetarian, ovo-vegetarian, and veganism, and the differences between them.
+
+Nutritional Benefits of Vegetarianism: Discussing the health benefits of a vegetarian diet, including lower risks of heart disease, diabetes, and certain cancers.
+
+Innovative Meat Alternatives: Highlighting innovative plant-based meat alternatives like burgers, sausages, and meatballs, and their rising popularity.
+
+Organic Vegetarian Products: Exploring the benefits of organic vegetarian products and the importance of choosing organic options.
+
+Global Vegetarian Cuisine: Exploring vegetarian dishes from different cuisines around the world, showcasing cultural diversity.
+
+Seasonal and Local Vegetarian Eating: Discussing the advantages of consuming seasonal and locally sourced vegetarian products.
+
+Vegan Desserts: Sharing recipes and ideas for delicious vegan desserts such as cakes, cookies, and ice creams.
+
+Plant-Based Snacks: Highlighting healthy and tasty vegetarian snacks made from fruits, vegetables, nuts, and seeds.
+
+Vegetarian Athletes and Fitness: Exploring the diets and nutrition plans of vegetarian athletes, debunking myths about protein intake in plant-based diets.
+
+Cruelty-Free Beauty and Personal Care: Discussing vegetarian and vegan-friendly beauty products, skincare, and cosmetics, emphasizing cruelty-free practices.
+
+Vegetarian Family Meals: Providing family-friendly vegetarian recipes and meal ideas suitable for children and adults.
+
+Reducing Food Waste: Tips and strategies for minimizing food waste related to vegetarian products, including creative recipes for using leftovers.
+
+
+***Card sorting metoda pomoću ChatGpt
+
+*Za prvu personu (Alex)
+
+Input: Okay, great. Now, act as persona 1. Use Open Card Sorting and organize these topics in groups based on their understanding and logic.
+
+Output:
+
+Group 1: Culinary Exploration and Techniques
+
+Creative Vegetarian Cooking Techniques
+Global Vegetarian Cuisine
+Home Gardening for Vegetables
+
+Group 2: Ethical and Sustainable Living
+Ethical Eating and Sustainable Living
+Plant-Based Dairy Alternatives
+Waste Reduction and Sustainable Kitchen Practices
+
+Group 3: Specialized Diets and Preferences
+Low-Carb Vegetarian Recipes
+Gluten-Free Vegetarian Living
+Vegan Baking and Desserts
+Plant-Based Nutrition for Athletes
+
+Group 4: Quick and Convenient Meals
+Quick and Easy Vegetarian Meals
+
+Group 5: Mindful Eating and Wellness
+Mindful Eating and Meditation
+
+Group 6: Lifestyle and Personal Care
+Vegan Beauty and Personal Care
+
+Group 7: Plant-Based Proteins
+Plant-Based Proteins 
+
+*Za drugu personu (Maya)
+
+Input: Okay, great. Now, act as persona 2. Use Open Card Sorting and organize these topics in groups based on their understanding and logic.
+
+Output:
+
+Group 1: Mindful Eating and Ethical Living
+Ethical Eating and Sustainable Living
+Mindful Eating and Meditation
+Home Gardening for Vegetables
+
+Group 2: Specialized Diets and Nutrition
+Low-Carb Vegetarian Recipes
+Gluten-Free Vegetarian Living
+Plant-Based Nutrition for Athletes
+
+Group 3: Culinary Exploration and Techniques
+Creative Vegetarian Cooking Techniques
+Global Vegetarian Cuisine
+
+Group 4: Convenient and Healthy Meals
+Quick and Easy Vegetarian Meals
+Vegan Baking and Desserts
+Plant-Based Proteins
+
+Group 5: Sustainability Practices
+Waste Reduction and Sustainable Kitchen Practices
+
+Group 6: Personal Care and Lifestyle Choices
+Vegan Beauty and Personal Care
+
+*Za trecu personu (Evan)
+
+Input: Okay, great. Now, act as persona 3. Use Open Card Sorting and organize these topics in groups based on their understanding and logic.
+
+Output: 
+
+Group 1: Ethical Living and Sustainability
+Ethical Eating and Sustainable Living
+Home Gardening for Vegetables
+Waste Reduction and Sustainable Kitchen Practices
+
+Group 2: Specialized Diets and Nutrition
+Low-Carb Vegetarian Recipes
+Gluten-Free Vegetarian Living
+Plant-Based Nutrition for Athletes
+
+Group 3: Culinary Techniques and Exploration
+Creative Vegetarian Cooking Techniques
+Global Vegetarian Cuisine
+
+Group 4: Convenient and Healthy Meals
+Quick and Easy Vegetarian Meals
+Vegan Baking and Desserts
+Plant-Based Proteins
+
+Group 5: Personal Care and Lifestyle Choices
+Vegan Beauty and Personal Care
+
+
+***Sada slijedi kombiniranje kategorija svih persona pomocu ChatGpt
+
+Input: Great. Now, I want you to combine these resulting categories for all personas.
+
+Output:
+
+Group 1: Culinary Techniques and Exploration
+Creative Vegetarian Cooking Techniques
+Global Vegetarian Cuisine
+
+Group 2: Ethical Living and Sustainability
+Ethical Eating and Sustainable Living
+Home Gardening for Vegetables
+Waste Reduction and Sustainable Kitchen Practices
+
+Group 3: Specialized Diets and Nutrition
+Low-Carb Vegetarian Recipes
+Gluten-Free Vegetarian Living
+Plant-Based Nutrition for Athletes
+
+Group 4: Convenient and Healthy Meals
+Quick and Easy Vegetarian Meals
+Vegan Baking and Desserts
+Plant-Based Proteins
+
+Group 5: Mindful Eating and Wellness
+Mindful Eating and Meditation
+
+Group 6: Lifestyle Choices and Personal Care
+Vegan Beauty and Personal Care
+
+
+***Kreiranje sitemape na temelju kombiniranih kategorija dobivene card sortingom pomocu ChatGpt
+
+Input: Great. Now, based on these combining categories, I want you to create a detailed sitemap for the web application selling vegetarian products.
+
+Output:
+
+Home
+
+Featured Products
+	Culinary Techniques and Exploration
+		Creative Vegetarian Cooking Techniques
+		Global Vegetarian Cuisine
+	Ethical Living and Sustainability
+		Ethical Eating and Sustainable Living
+		Home Gardening for Vegetables
+		Waste Reduction and Sustainable Kitchen Practices
+	Specialized Diets and Nutrition
+		Low-Carb Vegetarian Recipes
+		Gluten-Free Vegetarian Living
+		Plant-Based Nutrition for Athletes
+	Convenient and Healthy Meals
+		Quick and Easy Vegetarian Meals
+		Vegan Baking and Desserts
+		Plant-Based Proteins
+	Mindful Eating and Wellness
+		Mindful Eating and Meditation
+	Lifestyle Choices and Personal Care
+		Vegan Beauty and Personal Care
+New Arrivals
+Special Offers
+About Us
+Contact Us
+
+Recipes & Techniques
+Culinary Techniques and Exploration
+	Creative Vegetarian Cooking Techniques
+	Global Vegetarian Cuisine
+	
+Ethical Living & Sustainability
+	Ethical Eating and Sustainable Living
+	Home Gardening for Vegetables
+	Waste Reduction and Sustainable Kitchen Practices
+Specialized Diets & Nutrition
+	Low-Carb Vegetarian Recipes
+	Gluten-Free Vegetarian Living
+	Plant-Based Nutrition for Athletes
+Convenient & Healthy Meals
+	Quick and Easy Vegetarian Meals
+	Vegan Baking and Desserts
+	Plant-Based Proteins
+Mindful Eating & Wellness
+	Mindful Eating and Meditation
+Lifestyle Choices & Personal Care
+	Vegan Beauty and Personal Care
+
+
+Community & Engagement
+	Interactive Cooking Communities
+	Culinary Creativity Challenges
+	User Stories and Testimonials
+	Blog & Articles
+	Cooking Events and Workshops
+	User Resources
+
+Cooking Guides and Tutorials
+	Kitchen Essentials
+	Eco-Friendly Cookware
+	Recipe Books
+	Account
+
+User Profile
+	Order History
+	Wishlist
+	Settings
+Contact
+	Customer Support
+	FAQ
+	Contact Form
+Footer
+	Privacy Policy
+	Terms and Conditions
+	Shipping Information
+	Social Media Links 

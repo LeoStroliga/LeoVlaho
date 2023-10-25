@@ -1,0 +1,73 @@
+U OVOM TEXT DOKUMENTU NALAZE SE 3 PERSONE KREIRANE POMOĆU CHATGPT. REALIZIRANE SU KORIŠTENJEM
+FIGMA ALATA
+
+
+
+LINK NA PERSONE U FIGMI: https://www.figma.com/file/bfqnI1iXxLyX3fEZ7lNaJI/PERSONAS?type=design&node-id=0%3A1&mode=design&t=YS7M9GBXdHmNeIlP-1
+(Molim povratnu informaciju ukoliko link nije ispravan kako bih mogao priložiti ispravni)
+
+
+
+***User personas: 3 persone kreirane pomoću ChatGpt
+
+Input: Develop 3 user personas for a new web application that sells vegetarian products.
+
+Output: 
+
+1. Persona: Culinary Adventurer Alex
+
+Background:
+Alex is a 25-year-old culinary enthusiast with a passion for experimenting in the kitchen. They are a vegetarian by choice and are always on the lookout for unique and exotic vegetarian ingredients to create innovative recipes. Alex enjoys exploring various cuisines and incorporating diverse flavors into their cooking.
+
+Goals and Needs:
+
+Unique Ingredients: Alex is interested in rare and hard-to-find vegetarian ingredients from different cultures, seeking a platform that offers a wide variety of specialty products.
+
+Recipe Inspiration: They are constantly looking for recipe inspiration and appreciate a platform that provides detailed recipes, cooking tips, and pairing suggestions for the products sold.
+
+Foodie Community: Alex enjoys connecting with fellow food enthusiasts, sharing recipes, and participating in forums or communities where they can discuss cooking techniques and flavor combinations.
+Challenges:
+
+Quality Assurance: Alex values high-quality ingredients and can be skeptical about purchasing items online without knowing their quality. Detailed product descriptions and user reviews are important to them.
+
+Budget Constraints: While interested in unique products, Alex also has a budget to consider and looks for reasonably priced items that offer good value for money.
+
+2. Persona: Mindful Meditator Maya
+
+Background:
+Maya is a 40-year-old yoga instructor and meditation coach. She follows a vegetarian and plant-based diet not only for health reasons but also as a part of her spiritual and ethical beliefs. Maya practices mindfulness in all aspects of her life and prefers products that align with her values of compassion and sustainability.
+
+Goals and Needs:
+
+Ethical and Sustainable Products: Maya prioritizes vegetarian products that are ethically sourced, cruelty-free, and environmentally sustainable. She looks for certifications and transparent sourcing information.
+
+Holistic Health: She seeks products that contribute to her overall well-being, including organic foods, natural supplements, and cruelty-free personal care items.
+
+Educational Resources: Maya appreciates a platform that offers educational resources such as articles, videos, and guides on plant-based nutrition, sustainable living, and mindful eating practices.
+Challenges:
+
+Limited Availability: Maya lives in an area where it's challenging to find a variety of vegetarian products locally. She relies on online platforms to access a wider range of products.
+
+Time Sensitivity: Maya’s busy schedule teaching yoga classes and leading meditation sessions leaves her with limited time for browsing, so a user-friendly interface and quick navigation are essential.
+
+3. Persona: Ethical Environmentalist Evan
+
+Background:
+Evan is a 32-year-old environmental activist and vegan advocate. They are deeply committed to living a cruelty-free lifestyle and promoting sustainable practices. Evan believes in the power of consumer choices and actively supports businesses that have a positive impact on the environment and animal welfare.
+
+Goals and Needs:
+
+Vegan and Cruelty-Free: Evan specifically looks for vegan products that do not contain any animal-derived ingredients and are certified cruelty-free. They are interested in plant-based alternatives to everyday products.
+
+Activism and Advocacy: Evan is involved in vegan advocacy and appreciates platforms that contribute a portion of their profits to animal welfare organizations. They enjoy being part of a community that shares their passion for ethical living.
+
+Product Transparency: Evan values transparency in labeling and production processes. They appreciate detailed information about the companies, their values, and the sourcing methods of the products.
+Challenges:
+
+Limited Product Information: Evan often finds it challenging to get comprehensive information about products in physical stores. They rely on online platforms for in-depth product details and customer reviews.
+
+Product Diversity: While there are mainstream vegan products available, Evan is always on the lookout for innovative and niche items that cater to specific needs, such as vegan alternatives for non-food items.
+
+
+
+***AI slike kreirane pomoću besplatnog alata s interneta imena Gencraft
