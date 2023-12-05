@@ -18,7 +18,7 @@ export default async function Blog() {
     const posts = await getPosts();
     return (
         <main className="flex flex-col items-center min-h-screen max-w-5xl m-auto p-10">
-            <h1 className="text-3xl font-bold p-10">Blog Index Page</h1>
+            <h1 className="text-3xl font-bold p-10">Special Offers Page</h1>
             <ul className="flex flex-col gap-8">
                 {posts.map((post) => (
                     <li key={post.id}>
