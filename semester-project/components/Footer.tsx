@@ -5,7 +5,7 @@ import './footer.css';
 
 const Footer=()=>{
     return(
-        <div className="footer">
+        <div className="footer flex flex-col min-h-full ">
             <div className="sb__footer section__padding">
                 <div className="sb__footer-links">
                     <div className="sb__footer-links_div">

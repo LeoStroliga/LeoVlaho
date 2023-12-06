@@ -14,9 +14,10 @@ const images: HeroImageObject[] = [
 ];
 
 const HeroSection = () => (
-  <section className="container flex justify-between items-center gap-10 w-screen">
-    <div className="flex flex-col justify-start gap-5 max-w-xl">
-      <h2 style={{color:"blueviolet"}}>
+    <section className="grid grid-cols-3 grid-rows-1 gap-100 grow container flex justify-between items-center gap-10 w-screen  " style={{ padding: 50    }}>
+
+        <div className="grid col-start-1 col-span-2">
+            <h2 style={{ color: "blueviolet", fontSize: 20 }}>
       Embark on a Journey of Flavor, Mindfulness, and Sustainability
       </h2>
       <p style={{}}>
@@ -26,16 +27,21 @@ const HeroSection = () => (
        
       </p>
     </div>
+
     <div className="flex-shrink-0">
-      <div className="grid grid-cols-2 grid-rows-2 gap-2 grow">
+           
+                <div className="grid col-start-3 col-span-1">
         {images.map((imageObj, index) => (
-          <div key={index} className="relative h-52 w-52">
-            <Image
+            <div key={index} className="relative">
+                <Image                    
               src={imageObj.image}
               alt={`Hero image ${index + 1}`}
-              fill
+                 
+
               style={{
-                objectFit: "cover",
+                  //objectFit: "cover",
+                  objectFit: "fill",
+              //   width: '200%',
                 borderRadius: `${imageObj.borderRadius}`,
               }}
             />
