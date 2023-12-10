@@ -16,7 +16,6 @@ const pages: Page[] = [
   { href: "/FeaturedProducts", title: "Featured Products" },
   { href: "/blog", title: "Special Offers" },
   { href: "/UserResources", title: "User Resources" },
-  { href: "/AboutUs", title: "About Us" },
   { href: "/signin", title: "Sign In" },
 ];
 
