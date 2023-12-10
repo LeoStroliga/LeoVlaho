@@ -1,6 +1,33 @@
 import React from "react";
 import './footer.css';
 
+type TitleProps = {
+    children: string;
+  };
+  
+  type ListProps = {
+    title: string;
+    items: string[];
+  };
+  
+  const FooterListTitle = ({ children }: TitleProps) => (
+    <div className="font-roboto-condensed font-bold text-2xl whitespace-nowrap text-brand-purple-200 mb-1 lg:mb-5">
+      {children}
+    </div>
+  );
+  
+  const FooterList = ({ title, items }: ListProps) => {
+    return (
+      <div>
+        <FooterListTitle>{title}</FooterListTitle>
+        <ul className="font-roboto text-brand-purple-50">
+          {items.map((item, index) => (
+            <li key={index}>{item}</li>
+          ))}
+        </ul>
+      </div>
+    );
+  };
 
 
 const Footer=()=>{
@@ -9,49 +36,38 @@ const Footer=()=>{
             <div className="sb__footer section__padding">
                 <div className="sb__footer-links">
                     <div className="sb__footer-links_div">
-                        <h4>COMPANY</h4>
-                        <a href="/new_arrivals">
-                            <p>New Arrivals</p>
-                        </a>
-                        <a href="/privacy_policy">
-                            <p>Privacy Policy</p>
-                        </a>
-                        <a href="/terms_conditions">
-                            <p>Terms & Conditions</p>
-                        </a>
-                        <a href="/about_us">
-                            <p>About Us</p>
-                        </a>
+                    <FooterList
+                 title="COMPANY"
+                items={[
+                        "New Arrivals",
+                        "Privacy Policy",
+                        "Terms & Conditions",
+                        "About Us",
+                        ]}
+                    />
                     </div>
                     <div className="sb__footer-links_div">
-                        <h4>SITEMAP</h4>
-                        <a href="/home">
-                            <p>Home</p>
-                        </a>
-                        <a href="/featured_products">
-                            <p>Featured products</p>
-                        </a>
-                        <a href="/special_offers">
-                            <p>Special Offers</p>
-                        </a>
-                        <a href="/user_resources">
-                            <p>User resources</p>
-                        </a>
+                    <FooterList
+                        title="SITEMAP"
+                        items={[
+                                "Home",
+                                "Featured Products",
+                                "Special Offers",
+                                "User Resources",
+                                "Sign In",
+                                ]}
+                            />
                     </div>
                     <div className="sb__footer-links_div">
-                        <h4>CONTACT US</h4>
-                        <a href="/fb">
-                            <p>Facebook</p>
-                        </a>
-                        <a href="/instagram">
-                            <p>Instagram</p>
-                        </a>
-                        <a href="/email">
-                            <p>Email</p>
-                        </a>
-                        <a href="/github">
-                            <p>Github</p>
-                        </a>
+                    <FooterList
+                        title="CONTACT US"
+                        items={[
+                                "Facebook",
+                                "Instagram",
+                                "Email",
+                                "Github",
+                                ]}
+                            />
                     </div>
                     
                 </div>

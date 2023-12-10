@@ -1,45 +1,36 @@
 "use client";
+import { useState } from "react";
 
-import Link from "next/link";
-import { usePathname } from "next/navigation";
-import { FC } from "react";
-import Logo from "./Logo";
-import { cn } from "@/lib/utils";
+import Logo from "@/components/Logo";
+import MainNav from "@/components/MainNav";
+import MobileNav from "@/components/MobileNav";
 
-interface NavbarProps {
-  // Record of string keys and string values where each value is a path starting with a slash
-  pages: Record<string, `/${string}`>;
-}
+export type Page = {
+  href: string;
+  title: string;
+};
 
-const baseClass =
-  "uppercase whitespace-nowrap font-roboto-condensed text-base px-5 py-3 rounded-sm text-brand-purple-900 hover:bg-brand-purple-200";
+// Get this info from some external source (e.g. CMS)
+const pages: Page[] = [
+  { href: "/", title: "Home" },
+  { href: "/FeaturedProducts", title: "Featured Products" },
+  { href: "/blog", title: "Special Offers" },
+  { href: "/UserResources", title: "User Resources" },
+  { href: "/AboutUs", title: "About Us" },
+  { href: "/signin", title: "Sign In" },
+];
 
-const Navbar: FC<NavbarProps> = ({ pages }) => {
-  const pathName = usePathname();
+const NavBar = () => {
+  const [open, setOpen] = useState(false);
 
   return (
-    <section className="container flex items-center justify-between mx-auto">
+    <div className="container flex items-center justify-between">
       <Logo />
-      <nav className="flex items-center justify-center p-4">
-        <ul className="flex gap-2">
-          {Object.entries(pages).map(([name, path]) => (
-            <li key={name}>
-              <Link href={path}>
-                <span
-                  className={cn(baseClass, {
-                    "bg-brand-purple-700 text-brand-purple-100 pointer-events-none":
-                      path === pathName,
-                  })}
-                >
-                  {name}
-                </span>
-              </Link>
-            </li>
-          ))}
-        </ul>
-      </nav>
-    </section>
+      <MainNav pages={pages} />
+      
+      <MobileNav open={open} clickHandler={setOpen} pages={pages} />
+    </div>
   );
 };
 
-export default Navbar;
+export default NavBar;
