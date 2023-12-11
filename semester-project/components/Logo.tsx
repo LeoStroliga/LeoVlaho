@@ -13,7 +13,7 @@ const Logo: FC = () => (
       style={{ width: "50px", height: "50px" }} // Add any additional classes for styling if needed
     />
 
-    <span className="font-roboto-condensed font-bold text-3xl whitespace-nowrap">
+    <span style={{color: "blueviolet", fontSize: "40px", fontWeight: "900"}}>
       Vego
     </span>
   </div>
