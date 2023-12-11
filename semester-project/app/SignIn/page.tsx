@@ -6,7 +6,7 @@ const LoginForm = () => {
   <div className="page-container">
     <div className="cover">
       <h1 style={{fontSize: '25px'}}>SIGN IN</h1>
-      <input type="text" placeholder='Username'/>
+      <input type="text" placeholder='Email'/>
       <input type="password" placeholder='Password'/>
 
       <button className="login-btn" style={{color: "white"}}>
