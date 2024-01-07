@@ -1,0 +1,17 @@
+{
+  "ExpandedNodes": [
+    "",
+    "\\app",
+    "\\app\\(contentful)",
+    "\\app\\(contentful)\\cms",
+    "\\app\\(contentful)\\cms\\FeaturedProducts",
+    "\\app\\(contentful)\\cms\\FeaturedProducts\\[productId]",
+    "\\app\\(contentful)\\types",
+    "\\app\\_components",
+    "\\components",
+    "\\components\\ui",
+    "\\lib"
+  ],
+  "SelectedNode": "\\app\\(contentful)\\cms\\FeaturedProducts\\[productId]\\page.tsx",
+  "PreviewInSolutionExplorer": false
+}

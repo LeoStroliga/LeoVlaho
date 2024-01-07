@@ -9,16 +9,16 @@ export type Page = {
   href: string;
   title: string;
 };
-
+//test
 // Get this info from some external source (e.g. CMS)
 const pages: Page[] = [
   { href: "/", title: "Home" },
-  { href: "/FeaturedProducts", title: "Featured Products" },
+  { href: "/cms/FeaturedProducts", title: "Featured Products" },
   { href: "/blog", title: "Special Offers" },
   { href: "/UserResources", title: "User Resources" },
-  { href: "/SignIn", title: "Sign In" },
+ { href: "/SignIn", title: "Sign In" },
 ];
-
+ 
 const NavBar = () => {
   const [open, setOpen] = useState(false);
 
