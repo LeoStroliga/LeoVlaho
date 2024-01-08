@@ -1,4 +1,4 @@
-import { TypeCategory } from "./TypeCategory";
+//import { TypeCategory } from "./TypeCategory";
 
 // import type {
 //   ChainModifiers,
@@ -9,7 +9,7 @@ import { TypeCategory } from "./TypeCategory";
 // } from "contentful";
 // import type { TypeCategorySkeleton } from "./TypeCategory";
 
-import { TypeCategory } from "./TypeCategory";
+//import { TypeCategory } from "./TypeCategory";
 
 // export interface TypeProductFields {
 //   name: EntryFieldTypes.Symbol;

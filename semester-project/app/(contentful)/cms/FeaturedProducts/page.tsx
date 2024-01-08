@@ -9,7 +9,7 @@ import {
     CardTitle,
 } from "@/components/ui/card";
 import Link from "next/link";
-import CategoryFilter from "../_components/CategoryFilter";
+//import CategoryFilter from "../_components/CategoryFilter";
 import { FC } from "react";
 import { TypeProductListItem } from "../../types/TypeProduct";
 import Image from "next/image";
