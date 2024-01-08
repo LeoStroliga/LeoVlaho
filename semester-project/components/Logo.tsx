@@ -14,6 +14,7 @@ const Logo: FC = () => (
             // style={{ width: "50px", height: "50px" }} // Add any additional classes for styling if needed
             width={50}
             height={50}
+            alt="logo"
     />
 
     <span style={{color: "blueviolet", fontSize: "40px", fontWeight: "900"}}>
