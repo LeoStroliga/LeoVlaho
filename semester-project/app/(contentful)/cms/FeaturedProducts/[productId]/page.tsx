@@ -3,7 +3,7 @@ import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
 
 
-import { RichTextLinksFragment } from "@/marketing-web/app/gql/graphql";
+//import { RichTextLinksFragment } from "@/marketing-web/app/gql/graphql";
 import { HeroImage } from "../page";
 import contentfulService from "@/lib/contentfulClient";
 console.log("page");
