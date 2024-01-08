@@ -8,9 +8,9 @@ import { Badge } from "@/components/ui/badge";
 //} from "@contentful/rich-text-react-renderer";
 //import { BLOCKS } from "@contentful/rich-text-types";
 
-import hljs from "highlight.js/lib/core";
-import javascript from "highlight.js/lib/languages/javascript";
-import python from "highlight.js/lib/languages/python";
+//import hljs from "highlight.js/lib/core";
+//import javascript from "highlight.js/lib/languages/javascript";
+//import python from "highlight.js/lib/languages/python";
 //import "highlight.js/styles/github-dark.css";
 import { RichTextLinksFragment } from "@/marketing-web/app/gql/graphql";
 import { HeroImage } from "../page";
