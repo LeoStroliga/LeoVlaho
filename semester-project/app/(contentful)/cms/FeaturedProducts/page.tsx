@@ -71,17 +71,20 @@ const ProductCard: FC<TypeProductListItem> = ({
             </Link>
         </CardContent>
         <CardFooter>
-            {categories?.map((category) => (
-                <Badge variant={category?.label as BadgeProps["variant"]} key={id}>
-                    {category?.label}
-                </Badge>
-            ))}
+          
         </CardFooter>
     </Card>
 );
 
 
 /*
+ line 74{categories?.map((category) => (
+ line 74              <Badge variant={category?.label as BadgeProps["variant"]} key={id}>
+ line 74                  {category?.label}
+ line 74              </Badge>
+ line 74          ))}
+ line 74
+    
 const CmsPage: FC<SearchParams> = async ({ searchParams }) => {
   const products = await contentfulService.getAllProducts();
   const categories = await contentfulService.getAllCategories();
