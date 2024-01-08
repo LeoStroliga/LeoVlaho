@@ -1,4 +1,4 @@
-import { SearchParams } from "@/app/blog/page";
+    import { SearchParams } from "@/app/blog/page";
 import { BadgeProps, Badge } from "@/components/ui/badge";
 import {
     Card,
