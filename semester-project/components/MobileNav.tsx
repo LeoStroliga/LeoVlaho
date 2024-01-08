@@ -5,10 +5,10 @@ import { usePathname } from "next/navigation";
 import { cn } from "@/lib/utils";
 import { Page } from "@/components/NavBar";
 
-
-type MobileNavProps = HamburgerProps & {
-  pages: Page[];
-};
+/*
+//type MobileNavProps = HamburgerProps & {
+//  pages: Page[];
+//};
 
 const MobileNav = ({ pages, open, clickHandler }: MobileNavProps) => {
   const pathname = usePathname();
@@ -45,3 +45,4 @@ const MobileNav = ({ pages, open, clickHandler }: MobileNavProps) => {
 };
 
 export default MobileNav;
+*/
