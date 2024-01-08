@@ -2,11 +2,11 @@ import Image from "next/image";
 import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
 
-import {
-    CommonNode,
-    documentToReactComponents,
-} from "@contentful/rich-text-react-renderer";
-import { BLOCKS } from "@contentful/rich-text-types";
+//import {
+//    CommonNode,
+//    documentToReactComponents,
+//} from "@contentful/rich-text-react-renderer";
+//import { BLOCKS } from "@contentful/rich-text-types";
 
 import hljs from "highlight.js/lib/core";
 import javascript from "highlight.js/lib/languages/javascript";
