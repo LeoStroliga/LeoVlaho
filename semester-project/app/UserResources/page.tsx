@@ -1,6 +1,9 @@
 import React from 'react';
+import RecipeTitle from './Title';
 import './UR.css'
+
 const RecipeContainer = ({ title, ingredients, instructions, imageUrl }) => (
+  
   <div className="RecipeContainer">
     <div className="image-container">
       <img src={imageUrl} alt={`${title} Image`} className="recipe-image" />
@@ -23,6 +26,7 @@ const RecipeContainer = ({ title, ingredients, instructions, imageUrl }) => (
   </div>
 );
 const App = () => {
+  
   const recipes = [
     {
       title: 'Vegetarian Chickpea and Spinach Curry',
@@ -118,6 +122,7 @@ const App = () => {
 
   return (
     <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center' }}>
+      <RecipeTitle />
       {recipes.map((recipe, index) => (
         <RecipeContainer
         key={index}
