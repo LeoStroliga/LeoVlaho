@@ -1,0 +1,46 @@
+h1{
+    font-size: larger;
+    font-weight: 800;
+}
+
+h3{
+    font-size: large;
+    font-style: italic;
+    font-weight: 500;
+}
+/* Add this CSS to your stylesheet or in your React component styles */
+
+/* RecipeContainer component styles */
+
+  
+.App {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .RecipeContainer {
+    width: 70%; /* Adjust as needed */
+    margin: 20px;
+    border: 1px solid #ddd;
+    padding: 15px;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .image-container {
+    margin-bottom: 15px;
+  }
+  
+  .recipe-image {
+    max-width: 100%;
+    height: auto;
+  }
+  
+  
+
+
+  
+  
