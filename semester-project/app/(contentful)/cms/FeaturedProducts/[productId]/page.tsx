@@ -55,11 +55,28 @@ const ProductPage = async ({ params }: { params: Params }) => {
                     </div>
                 </div>
             </div>
-            {/* <div
+            {/* <div    // line 57 <Button variant="emph">+ Add to cart </Button> line 57
         className="mt-10 prose prose-h1:text-brand-purple-800"
         dangerouslySetInnerHTML={{
           __html: documentToHtmlString(product?.richTextDescription?.json),
         }}
+         78           <div className="flex flex-col gap-4 justify-between">
+        line 78 <div className="grid grid-cols-2 gap-2">
+        line 78             {product.images?.map((image) => (
+        line 78                 <div key={image} className="relative w-full h-32">
+        line 78                     <Image
+        line 78                         fill
+        line 78                         style={{ objectFit: "cover" }}
+        line 78                         className="rounded-md"
+        line 78                         sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+        line 78                         src={image as string}
+        line 78                         alt={product.name as string}
+        line 78                     />
+        line 78                 </div>
+         78                        </div>
+         78                         ))
+         78                     }
+         78                    </div>
       /> */}
             {/* 48 {product.images?.map((image) => (
                      <div key={image} className="relative w-full h-32">
