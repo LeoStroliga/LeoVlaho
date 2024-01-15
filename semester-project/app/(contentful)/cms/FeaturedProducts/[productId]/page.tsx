@@ -2,17 +2,17 @@ import Image from "next/image";
 import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
 
-import {
-    CommonNode,
-    documentToReactComponents,
-} from "@contentful/rich-text-react-renderer";
-import { BLOCKS } from "@contentful/rich-text-types";
-
-import hljs from "highlight.js/lib/core";
-import javascript from "highlight.js/lib/languages/javascript";
-import python from "highlight.js/lib/languages/python";
+//import {
+//    CommonNode,
+//    documentToReactComponents,
+//} from "@contentful/rich-text-react-renderer";
+//import { BLOCKS } from "@contentful/rich-text-types";
+//
+//import hljs from "highlight.js/lib/core";
+//import javascript from "highlight.js/lib/languages/javascript";
+//import python from "highlight.js/lib/languages/python";
 //import "highlight.js/styles/github-dark.css";
-import { RichTextLinksFragment } from "@/marketing-web/app/gql/graphql";
+//import { RichTextLinksFragment } from "@/marketing-web/app/gql/graphql";
 import { HeroImage } from "../page";
 import contentfulService from "@/lib/contentfulClient";
 console.log("page");
@@ -47,18 +47,7 @@ const ProductPage = async ({ params }: { params: Params }) => {
                 />
                    <div className="flex flex-col gap-4 justify-between">
                       <div className="grid grid-cols-2 gap-2">
-                       {product.images?.map((image) => (
-                           <div key={image} className="relative w-full h-32">
-                               <Image
-                                   fill
-                                   style={{ objectFit: "cover" }}
-                                   className="rounded-md"
-                                   sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
-                                   src={image as string}
-                                   alt={product.name as string}
-                               />
-                           </div>
-                        ))}
+                    
                     </div>
                     <div className="flex flex-col">
                         <div className="mb-2">{product.description}</div>
@@ -72,6 +61,19 @@ const ProductPage = async ({ params }: { params: Params }) => {
           __html: documentToHtmlString(product?.richTextDescription?.json),
         }}
       /> */}
+            {/* 48 {product.images?.map((image) => (
+                     <div key={image} className="relative w-full h-32">
+                         <Image
+                             fill
+                             style={{ objectFit: "cover" }}
+                             className="rounded-md"
+                             sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+                             src={image as string}
+                             alt={product.name as string}
+                         />
+                     </div>
+                 ))}
+            */}
             
         </main>
     );

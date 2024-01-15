@@ -1,4 +1,4 @@
-//import { TypeCategory } from "@/app/(contentful)/types/TypeCategory";
+
 import {
     TypeProductDetailItem,
     TypeProductListItem,
@@ -212,6 +212,7 @@ const getProductById = async (
     id: string
     
 ): Promise<TypeProductDetailItem | null> => {
+    var product: TypeProductDetailItem | null = null;
     try {
 
         const a = parseInt(id);
@@ -251,7 +252,7 @@ const getProductById = async (
             // Assuming you want the name property of the first item in the array
             const firstName = responseProduct[0].name;
             console.log(firstName);
-            var product: TypeProductDetailItem = {
+            product = {
                 /*    id: id,
                     name: responseProduct.name,
                     images: responseProduct.imagesCollection.items.map((item) => item.url),
@@ -273,7 +274,7 @@ const getProductById = async (
                 //images: responseProduct.imagesCollection.items.map((item) => item.url),
 
                 description: responseProduct[0].description,
-                categories: responseProduct[0].categories.map((c) => c),
+                categories: responseProduct[0].categories.map((c: any) => c),
 
             };
         } else {

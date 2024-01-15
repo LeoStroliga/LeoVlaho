@@ -1,6 +1,9 @@
 {
   "ExpandedNodes": [
-    ""
+    "",
+    "\\semester-project",
+    "\\semester-project\\components"
   ],
+  "SelectedNode": "\\semester-project\\components\\Footer.tsx",
   "PreviewInSolutionExplorer": false
 }

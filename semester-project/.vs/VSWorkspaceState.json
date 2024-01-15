@@ -5,13 +5,13 @@
     "\\app\\(contentful)",
     "\\app\\(contentful)\\cms",
     "\\app\\(contentful)\\cms\\FeaturedProducts",
-    "\\app\\(contentful)\\cms\\FeaturedProducts\\[productId]",
-    "\\app\\(contentful)\\types",
-    "\\app\\_components",
-    "\\components",
-    "\\components\\ui",
-    "\\lib"
+    "\\app\\(contentful)\\cms\\_components",
+    "\\app\\blog",
+    "\\app\\blog\\[postId]",
+    "\\app\\SignIn",
+    "\\app\\SignIn\\Icons",
+    "\\app\\UserResources"
   ],
-  "SelectedNode": "\\app\\(contentful)\\cms\\FeaturedProducts\\[productId]\\page.tsx",
+  "SelectedNode": "\\app\\(contentful)\\cms\\FeaturedProducts\\page.tsx",
   "PreviewInSolutionExplorer": false
 }
