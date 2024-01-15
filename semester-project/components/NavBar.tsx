@@ -3,7 +3,7 @@ import { useState } from "react";
 
 import Logo from "@/components/Logo";
 import MainNav from "@/components/MainNav";
-//import MobileNav from "@/components/MobileNav";
+import MobileNav from "@/components/MobileNav";
 
 export type Page = {
   href: string;
@@ -27,7 +27,7 @@ const NavBar = () => {
       <Logo />
       <MainNav pages={pages} />
       
-          {/*  <MobileNav open={open} clickHandler={setOpen} pages={pages} />*/}
+      <MobileNav open={open} clickHandler={setOpen} pages={pages} />
     </div>
   );
 };
