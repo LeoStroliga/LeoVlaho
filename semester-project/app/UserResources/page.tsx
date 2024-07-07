@@ -1,6 +1,7 @@
 ﻿import React from 'react';
 import RecipeTitle from './Title';
-import './UR.css'
+import Image from 'next/image';
+import './UR.css';
 
 interface Recipe {
     title: string;
@@ -9,11 +10,18 @@ interface Recipe {
     imageUrl: string;
 }
 
-const RecipeContainer:React.FC<Recipe> = ({ title, ingredients, instructions, imageUrl }) => (
-
+const RecipeContainer: React.FC<Recipe> = ({ title, ingredients, instructions, imageUrl }) => (
     <div className="RecipeContainer">
         <div className="image-container">
-            <img src={imageUrl} alt={`${title} Image`} className="recipe-image" />
+            <div className="image-wrapper">
+                <Image
+                    src={imageUrl}
+                    alt={`${title} Image`}
+                    layout="fill"
+                    objectFit="cover"
+                    className="recipe-image"
+                />
+            </div>
         </div>
         <div className="text-content">
             <h1>{title}</h1>
@@ -32,8 +40,8 @@ const RecipeContainer:React.FC<Recipe> = ({ title, ingredients, instructions, im
         </div>
     </div>
 );
-const AppRecipes = () => {
 
+const AppRecipes = () => {
     const recipes = [
         {
             title: 'Vegetarian Chickpea and Spinach Curry',
@@ -144,3 +152,4 @@ const AppRecipes = () => {
 };
 
 export default AppRecipes;
+

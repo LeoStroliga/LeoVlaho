@@ -1,4 +1,3 @@
-  //  import { SearchParams } from "@/app/blog/page";
 "use client";
 import { BadgeProps, Badge } from "@/components/ui/badge";
 import {
@@ -10,14 +9,13 @@ import {
     CardTitle,
 } from "@/components/ui/card";
 import Link from "next/link";
-//import CategoryFilter from "../_components/CategoryFilter";
+// import CategoryFilter from "../_components/CategoryFilter";
 import { FC } from "react";
 import { TypeProductListItem } from "../../types/TypeProduct";
 import Image from "next/image";
 import { cn } from "@/lib/utils";
 // import { products, categories } from "./productList";
 import contentfulService from "@/lib/contentfulClient";
-    
 
 interface Category {
     title: string;
@@ -58,16 +56,12 @@ const CategoryCard = ({ category }: { category: Category }) => {
                     height: '300px', // Set a fixed height
                 }}
             >
-                <img
+                <Image
                     src={category.imageUrl}
                     alt={category.title}
-                    style={{
-                        width: '100%',
-                        height: '100%',
-                        objectFit: 'cover',
-                        borderRadius: '8px',
-                        transition: 'opacity 0.3s ease',
-                    }}
+                    layout="fill"
+                    objectFit="cover"
+                    className="rounded-md transition-opacity duration-300 ease-in-out"
                     onMouseOver={(e) => (e.currentTarget.style.opacity = '0.8')}
                     onMouseOut={(e) => (e.currentTarget.style.opacity = '1')}
                 />
