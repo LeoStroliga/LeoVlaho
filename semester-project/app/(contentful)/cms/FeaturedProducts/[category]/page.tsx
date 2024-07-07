@@ -22,7 +22,7 @@ import CategoryPage from "../page";
 type Params = {
     category: string;
 };
-
+/*
 
 export interface HeroImageProps {
     productName: string;
@@ -50,7 +50,7 @@ export const HeroImage = ({
         </div>
     );
 };
-
+*/
 const ProductCard: FC<TypeProductListItem> = ({
     name,
     description,
@@ -87,16 +87,6 @@ const ProductCard: FC<TypeProductListItem> = ({
     </Card></Link>
 );
 
-
-/*line 73
- <CardFooter>
-           {categories?.map((category) => (
-               <Badge variant={category?.label as BadgeProps["variant"]} key={id}>
-                   {category?.label}
-               </Badge>
-           ))}
-       </CardFooter>
-*/
 
 
 const CmsPage = async ({ params }: { params: Params }) => {
