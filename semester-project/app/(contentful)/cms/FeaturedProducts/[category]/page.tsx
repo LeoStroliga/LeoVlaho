@@ -22,7 +22,7 @@ import CategoryPage from "../page";
 type Params = {
     category: string;
 };
-/*
+
 
 export interface HeroImageProps {
     productName: string;
@@ -50,7 +50,7 @@ export const HeroImage = ({
         </div>
     );
 };
-*/
+
 const ProductCard: FC<TypeProductListItem> = ({
     name,
     description,
