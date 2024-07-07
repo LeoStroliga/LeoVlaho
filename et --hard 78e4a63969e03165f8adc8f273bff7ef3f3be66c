@@ -1,0 +1,292 @@
+[33mcommit 5ba3f96ff776e7e32d5a2a3a411daff59ddd6b03[m[33m ([m[1;36mHEAD -> [m[1;32mmain[m[33m, [m[1;31morigin/main[m[33m, [m[1;31morigin/HEAD[m[33m)[m
+Author: LeoStroliga <leostroliga1@gmail.com>
+Date:   Sun Jul 7 16:35:07 2024 +0200
+
+    img to image
+
+[33mcommit 78e4a63969e03165f8adc8f273bff7ef3f3be66c[m
+Author: LeoStroliga <leostroliga1@gmail.com>
+Date:   Sun Jul 7 16:22:53 2024 +0200
+
+    npm update
+
+[33mcommit f5952da24b981aa5919ff9334f385e8579629942[m
+Author: LeoStroliga <leostroliga1@gmail.com>
+Date:   Sun Jul 7 16:15:29 2024 +0200
+
+    fixing login page
+
+[33mcommit a5dd6f73adae1adc06c66f2bf1a60378cc236e82[m
+Author: LeoStroliga <leostroliga1@gmail.com>
+Date:   Sun Jul 7 16:07:32 2024 +0200
+
+    removed hero image
+
+[33mcommit b05585c5730da4276494120dc977f71058485716[m
+Author: LeoStroliga <leostroliga1@gmail.com>
+Date:   Sun Jul 7 15:58:21 2024 +0200
+
+    finished categories
+
+[33mcommit 726b177324993e1b2b46b7ff6ae05e5388e4d17a[m
+Author: LeoStroliga <leostroliga1@gmail.com>
+Date:   Mon Jan 15 16:32:45 2024 +0100
+
+    added inteface
+
+[33mcommit c198ff7998395097e184d464f67363771285fb33[m
+Author: LeoStroliga <leostroliga1@gmail.com>
+Date:   Mon Jan 15 16:11:32 2024 +0100
+
+    nez sta radim
+
+[33mcommit c331e772a2cf3b2b5e311dcbfa65af9b5cbbaf53[m
+Merge: 24f8e7c c68a48b
+Author: LeoStroliga <leostroliga1@gmail.com>
+Date:   Mon Jan 15 16:01:12 2024 +0100
+
+    "commit staged"
+
+[33mcommit 24f8e7ce8eb22e2c7687f8e5d3866d036d04dde8[m
+Author: LeoStroliga <leostroliga1@gmail.com>
+Date:   Mon Jan 15 15:49:41 2024 +0100
+
+    correcting errors
+
+[33mcommit c68a48bb10f94ce9aba0503362d44949bbace922[m
+Author: Vlaho123 <vpetko00@fesb.hr>
+Date:   Wed Jan 10 16:55:48 2024 +0100
+
+    UR.css updated
+
+[33mcommit 42974d6afdf3d25f65634094401a9616523e5930[m
+Author: Vlaho123 <vpetko00@fesb.hr>
+Date:   Wed Jan 10 16:41:59 2024 +0100
+
+    Added Title
+
+[33mcommit c679147c9ce69773ab45db76df30f860f15ebc19[m
+Author: Vlaho123 <vpetko00@fesb.hr>
+Date:   Wed Jan 10 16:16:02 2024 +0100
+
+    User_Resources page updated
+
+[33mcommit 82c9c1ef10d6e5ba76ae14022ac554b3df689682[m
+Author: LeoStroliga <92427055+LeoStroliga@users.noreply.github.com>
+Date:   Mon Jan 8 20:19:13 2024 +0100
+
+    Update README.md
+
+[33mcommit d2fb08241145d8e8605375dc96a8d1e9b6701b08[m
+Author: LeoStroliga <leostroliga1@gmail.com>
+Date:   Mon Jan 8 17:36:50 2024 +0100
+
+    mobilenavbar fix
+
+[33mcommit 55ce1be53b5fd8a996fff48010e90ebaae1daabd[m
+Author: LeoStroliga <leostroliga1@gmail.com>
+Date:   Mon Jan 8 17:23:41 2024 +0100
+
+    commented labe
+
+[33mcommit b8fbbb169e9ce1e254d4ef5f38d117873027605c[m
+Author: LeoStroliga <leostroliga1@gmail.com>
+Date:   Mon Jan 8 17:20:18 2024 +0100
+
+    commented category filter
+
+[33mcommit 024898a416c852f6d121225ec7db71a6a841eec6[m
+Author: LeoStroliga <leostroliga1@gmail.com>
+Date:   Mon Jan 8 17:17:19 2024 +0100
+
+    deleted empty files
+
+[33mcommit 8451e5980ebcc6cf2d34133e705e6ee875dab356[m
+Author: LeoStroliga <leostroliga1@gmail.com>
+Date:   Mon Jan 8 17:15:24 2024 +0100
+
+    commented search params
+
+[33mcommit 7cc74865fd13a695c290280eb4d5ff143ea0b805[m
+Author: LeoStroliga <leostroliga1@gmail.com>
+Date:   Mon Jan 8 17:07:45 2024 +0100
+
+    removed images from product
+
+[33mcommit bbfd2a91628ef22b65d5e016e4e85dd07060ed4d[m
+Author: LeoStroliga <leostroliga1@gmail.com>
+Date:   Mon Jan 8 16:55:06 2024 +0100
+
+    commented marketing
+
+[33mcommit 1f99a4ffba81f5dd710f94a398256c1925b59dbd[m
+Author: LeoStroliga <leostroliga1@gmail.com>
+Date:   Mon Jan 8 16:49:55 2024 +0100
+
+    deleted highlight
+
+[33mcommit 79f482164567c626240380fd1ca7cea638b3d2ff[m
+Author: LeoStroliga <leostroliga1@gmail.com>
+Date:   Mon Jan 8 16:45:20 2024 +0100
+
+    reinstalled npm
+
+[33mcommit d16f26f0b70219da619dc0e3701f510d172789f7[m
+Author: LeoStroliga <leostroliga1@gmail.com>
+Date:   Mon Jan 8 16:36:48 2024 +0100
+
+    commented highlight
+
+[33mcommit 1ad061b62d706f94fe08e649c09e9079205c407d[m
+Author: LeoStroliga <leostroliga1@gmail.com>
+Date:   Mon Jan 8 16:33:36 2024 +0100
+
+    installed highlights
+
+[33mcommit 63b28e85af1efd9a538a07c65079d9b700da1db8[m
+Author: LeoStroliga <leostroliga1@gmail.com>
+Date:   Mon Jan 8 16:21:31 2024 +0100
+
+    added alt
+
+[33mcommit 3722113859d06fe15cebb182976d7b9fea063b47[m
+Author: LeoStroliga <leostroliga1@gmail.com>
+Date:   Mon Jan 8 16:07:08 2024 +0100
+
+    changed img with image
+
+[33mcommit 08204abdbbd9c6bd8a83ed5f5f62889745a9d363[m
+Author: LeoStroliga <leostroliga1@gmail.com>
+Date:   Mon Jan 8 15:43:51 2024 +0100
+
+    commented rich-text
+
+[33mcommit 635e609c5c443de04b65893f33a480cedbbfc68a[m
+Merge: 9aff393 454377a
+Author: LeoStroliga <leostroliga1@gmail.com>
+Date:   Sun Jan 7 16:01:38 2024 +0100
+
+    Merge branch 'main' of https://github.com/LeoStroliga/LeoVlaho
+
+[33mcommit 9aff393c707a7862ad97029ef260a8f58f391623[m
+Author: LeoStroliga <leostroliga1@gmail.com>
+Date:   Sun Jan 7 15:56:56 2024 +0100
+
+    Added cms to featured products (missing categoires)
+
+[33mcommit e6c477f94260b60958c088475a8a27eec40db407[m
+Author: LeoStroliga <leostroliga1@gmail.com>
+Date:   Sun Jan 7 15:54:00 2024 +0100
+
+    Added cms to fetured products (missing categoires)
+
+[33mcommit 454377a2d374610271c47d6744d44862077ebe8e[m
+Author: LeoStroliga <92427055+LeoStroliga@users.noreply.github.com>
+Date:   Mon Dec 11 19:41:20 2023 +0100
+
+    Rename Navbar.tsx to NavBar.tsx
+
+[33mcommit 359636840077f2efbbff7ef1e907a7f9c9df0663[m
+Author: LeoStroliga <leostroliga1@gmail.com>
+Date:   Mon Dec 11 19:35:01 2023 +0100
+
+    renamed navbar
+
+[33mcommit acec6f91fb5b53aca1b905bf6316555269ab9a0a[m
+Author: LeoStroliga <leostroliga1@gmail.com>
+Date:   Mon Dec 11 19:29:49 2023 +0100
+
+    added logo
+
+[33mcommit 2a5080f94dc22c34309f57e55f53c06bcbe6b0de[m
+Author: Vlaho123 <vpetko00@fesb.hr>
+Date:   Mon Dec 11 16:42:55 2023 +0100
+
+    Sign In Updated
+
+[33mcommit 1e9d5ff9eac45eaf55bca1f06599e8375f648166[m
+Author: Vlaho123 <vpetko00@fesb.hr>
+Date:   Mon Dec 11 16:36:32 2023 +0100
+
+    Landing Page Updated
+
+[33mcommit 59590fa2bc6a6b9e1ab9c7eee8b45c4a38c0d2cc[m
+Author: Vlaho123 <vpetko00@fesb.hr>
+Date:   Mon Dec 11 14:12:29 2023 +0100
+
+    Failed Logo Attempt
+
+[33mcommit 4d9ce9532c232f33f8b96c68484db54e7e7d99df[m
+Author: Vlaho123 <vpetko00@fesb.hr>
+Date:   Mon Dec 11 13:31:51 2023 +0100
+
+    App Updated
+
+[33mcommit 73630db9bf045555ec6c93526bdc3ecfc7a8bffb[m
+Author: Vlaho123 <vpetko00@fesb.hr>
+Date:   Mon Dec 11 13:30:48 2023 +0100
+
+    Sign In Completed
+
+[33mcommit 2020088729eabb63f4ce3fa00007ff14224d6b25[m
+Author: Vlaho123 <vpetko00@fesb.hr>
+Date:   Sun Dec 10 11:24:41 2023 +0100
+
+    Landing page updated_2
+
+[33mcommit fc3142cbce5fffa1edb4df18d1053a71a55893ea[m
+Author: Vlaho123 <vpetko00@fesb.hr>
+Date:   Sun Dec 10 11:17:57 2023 +0100
+
+    Landing Page Updated
+
+[33mcommit 98e53617c1c0b9bcc804ceee0432fcfa06cf7518[m
+Author: Vlaho123 <92428430+Vlaho123@users.noreply.github.com>
+Date:   Wed Dec 6 15:52:11 2023 +0100
+
+    Update README.md - LeoVlaho app link
+
+[33mcommit 481d760322ef5714264e7d5c0cfbab44602c9c9a[m
+Author: LeoStroliga <leostroliga1@gmail.com>
+Date:   Wed Dec 6 10:40:32 2023 +0100
+
+    Fixed HeroSection
+
+[33mcommit 1f252dd92037e61918d48e3f019f691ee005228c[m
+Author: Vlaho123 <vpetko00@fesb.hr>
+Date:   Tue Dec 5 14:53:44 2023 +0100
+
+    Hero Section_not good
+
+[33mcommit 23c5ab07b70d96e3518f5f5102efa9e050ad4b24[m
+Author: Vlaho123 <vpetko00@fesb.hr>
+Date:   Tue Dec 5 13:08:01 2023 +0100
+
+    Footer
+
+[33mcommit 26dd7367cdd01a1f93ebb5b867084e7c5b2e0241[m
+Author: Vlaho123 <vpetko00@fesb.hr>
+Date:   Tue Dec 5 12:27:51 2023 +0100
+
+    Navbar_completed
+
+[33mcommit ebbf67cf14c8eb4cc96b153aa208732e1c4e752e[m
+Author: Vlaho123 <92428430+Vlaho123@users.noreply.github.com>
+Date:   Tue Nov 7 14:15:12 2023 +0100
+
+    Add files via upload
+
+[33mcommit 3aaf90f98d3acb51482551116dc1124ab27f6006[m
+Author: Vlaho123 <92428430+Vlaho123@users.noreply.github.com>
+Date:   Tue Nov 7 14:11:43 2023 +0100
+
+    Create README.md
+
+[33mcommit 30e1337c0b6419e4acc1b5a91130d001f3515744[m
+Author: unknown <leostroliga1@gmail.com>
+Date:   Sun Nov 5 17:47:23 2023 +0100
+
+    added README.md
+
+[33mcommit 8f603b10c17f4eec7a486491f6ccc06a7339f71c[m
+Author: unknown <leo
