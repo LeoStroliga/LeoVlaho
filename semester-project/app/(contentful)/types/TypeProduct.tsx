@@ -5,6 +5,7 @@ export interface TypeProductListItem {
     description: string;
     categories: string[];
     bannerImage: string;
+    price: number;
 }
 
 export interface TypeProductDetailItem {
@@ -13,4 +14,6 @@ export interface TypeProductDetailItem {
     description: string;
     categories: string[];
     bannerImage: string;
+    price: number;
+    images: string[];
 }

@@ -1,4 +1,5 @@
   //  import { SearchParams } from "@/app/blog/page";
+"use client";
 import { BadgeProps, Badge } from "@/components/ui/badge";
 import {
     Card,
@@ -16,105 +17,101 @@ import Image from "next/image";
 import { cn } from "@/lib/utils";
 // import { products, categories } from "./productList";
 import contentfulService from "@/lib/contentfulClient";
+    
 
-export interface HeroImageProps {
-    productName: string;
-    image?: string;
-    className?: string;
+interface Category {
+    title: string;
+    imageUrl: string;
+    link: string;
 }
 
-export const HeroImage = ({
-    image,
-    productName,
-    className,
-}: HeroImageProps) => {
-    if (!image) return null;
+const categories: Category[] = [
+    {
+        title: 'Food',
+        imageUrl: '/hero/vege1.jpg',
+        link: 'food',
+    },
+    {
+        title: 'Vegan Beauty',
+        imageUrl: '/hero/vege2.jpg',
+        link: 'vegan-beauty',
+    },
+    {
+        title: 'Cruelty-Free Fashion',
+        imageUrl: '/hero/vege3.jpg',
+        link: 'cruelty-free-fashion',
+    },
+    {
+        title: 'Zero Waste Living',
+        imageUrl: '/hero/vege4.jpg',
+        link: 'zero-waste-living',
+    },
+];
 
+const CategoryCard = ({ category }: { category: Category }) => {
     return (
-        <div className={cn("relative w-96 h-60", className)}>
-            <Image
-                src={image}
-                fill
-                style={{ objectFit: "cover" }}
-                className="rounded-md hover:opacity-70"
-                sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw"
-                alt={productName || "product"}
-            />
+        <Link href={`FeaturedProducts/${category.link}`} key={category.link}>
+            <div
+                style={{
+                    position: 'relative',
+                    width: '450px', // Set a fixed width
+                    height: '300px', // Set a fixed height
+                }}
+            >
+                <img
+                    src={category.imageUrl}
+                    alt={category.title}
+                    style={{
+                        width: '100%',
+                        height: '100%',
+                        objectFit: 'cover',
+                        borderRadius: '8px',
+                        transition: 'opacity 0.3s ease',
+                    }}
+                    onMouseOver={(e) => (e.currentTarget.style.opacity = '0.8')}
+                    onMouseOut={(e) => (e.currentTarget.style.opacity = '1')}
+                />
+                <div
+                    style={{
+                        position: 'absolute',
+                        top: '50%',
+                        left: '50%',
+                        transform: 'translate(-50%, -50%)',
+                        color: '#FFFFFF', // Yellow text color
+                        fontSize: '32px', // Increased font size to 24px
+                        fontWeight: 'bold',
+                        textAlign: 'center',
+                        textShadow: '0 0 4px #000', // Increased shadow to 4px for more visibility
+                    }}
+                >
+                    {category.title}
+                </div>
+            </div>
+        </Link>
+    );
+};
+
+const CategoryPage = () => {
+    return (
+        <div className="flex flex-col items-center justify-center min-h-screen">
+           <h1 className="font-roboto-condensed text-6xl font-extrabold text-green-900 my-4">
+                Categories
+            </h1>
+            <div
+                style={{
+                    display: 'grid',
+                    gridTemplateColumns: 'repeat(2, 1fr)',
+                    gap: '16px',
+                    justifyContent: 'space-around',
+                    padding: '20px',
+                }}
+            >
+                {categories.map((category) => (
+                    <CategoryCard key={category.link} category={category} />
+                ))}
+            </div>
         </div>
     );
 };
 
-const ProductCard: FC<TypeProductListItem> = ({
-    name,
-    description,
-    bannerImage,
-    id,
-    categories,
-}) => (
-    <Card className="w-fit">
-        <CardHeader>
-            <CardTitle className="text-brand-purple-800">{name}</CardTitle>
-            <CardDescription>{description}</CardDescription>
-        </CardHeader>
-        <CardContent>
-            <Link href={`FeaturedProducts/${id}`}>
-                <div className="relative w-96 h-60">
-                    <Image
-                        src={bannerImage}
-                        fill
-                        style={{ objectFit: "cover" }}
-                        className="rounded-md hover:opacity-70"
-                        sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw"
-                        alt={name}
-                    />
-                </div>
-            </Link>
-        </CardContent>
-         
-    </Card>
-);
-
-
-/*line 73
- <CardFooter>
-           {categories?.map((category) => (
-               <Badge variant={category?.label as BadgeProps["variant"]} key={id}>
-                   {category?.label}
-               </Badge>
-           ))}
-       </CardFooter>
-*/
-
-const CmsPage = async () => {
-   
-    const products = await contentfulService.getAllProducts();
-
-  
-
-
-    return (
-        <main className="container flex flex-col items-center gap-10">
-            <h1 className="font-roboto-condensed text-6xl font-extrabold text-brand-purple-900 my-4">
-                Products
-            </h1>
-          
-
-            <ul className="grid grid-cols-2 gap-8">
-                {products.map((product) => {
-                    return (
-                        <li key={product.id}>
-
-
-                            <ProductCard {...product} />
-
-                        </li>
-                    );
-                })}
-            </ul>
-        </main>
-
-    );
-};
-
-
-export default CmsPage;
+export default CategoryPage;

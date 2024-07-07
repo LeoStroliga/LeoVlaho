@@ -22,7 +22,7 @@ const HeroSection = () => (
   <section style={{display:"flex", justifyContent: "space-between", alignItems: "center", height: "100vh", padding: "0 20px"}}>
     <div className="flex flex-col justify-start gap-5 max-w-xl">
       <span>
-      <h1 style={{fontSize: "50px", color: "blueviolet", alignItems: "end", fontWeight:"900"}}>
+      <h1 style={{fontSize: "50px", color: "#2F855A", alignItems: "end", fontWeight:"900"}}>
       Embark on a Journey of Flavor, Mindfulness, and Sustainability
       </h1>
       </span>

@@ -11,7 +11,7 @@ type TitleProps = {
   };
   
   const FooterListTitle = ({ children }: TitleProps) => (
-    <div className="font-roboto-condensed font-bold text-2xl whitespace-nowrap text-brand-purple-200 mb-1 lg:mb-5">
+    <div className="font-roboto-condensed font-bold text-2xl whitespace-nowrap mb-1 lg:mb-5">
       {children}
     </div>
   );

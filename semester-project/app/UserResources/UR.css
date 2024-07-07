@@ -1,28 +1,16 @@
-h1 {
-    font-size: larger;
-    font-weight: 800;
-}
-
-h3 {
-    font-size: large;
-    font-style: italic;
-    font-weight: 500;
-}
-/* Add this CSS to your stylesheet or in your React component styles */
-
-/* RecipeContainer component styles */
-
 
 .App {
     display: flex;
     flex-direction: column;
     align-items: center;
+    padding: 20px; /* Add padding to the entire app */
 }
 
-/* RecipeContainer.css */
+/* RecipeContainer component styles */
+
 .RecipeContainer {
-    width: 100%; /* Adjust as needed */
-    margin: 20px;
+    width: 100%;
+    margin-bottom: 20px; /* Add bottom margin for separation */
     border: 1px solid #ddd;
     padding: 15px;
     box-sizing: border-box;
@@ -32,15 +20,32 @@ h3 {
 
 .text-content {
     flex: 1;
+    padding: 0 20px; /* Add padding to text content */
 }
 
 .image-container {
     flex: 1;
-    margin-left: 20px;
+    max-width: 50%; /* Adjust max-width to allow more space for text */
+    margin-right: 20px; /* Add margin to image container */
 }
 
 .recipe-image {
-    max-width: 100%;
+    width: 100%;
     height: auto;
-    max-height: 100px;
+    object-fit: cover; /* Ensure the image covers the container */
+    border-radius: 8px; /* Add border radius for rounded corners */
+}
+
+/* Typography */
+h1 {
+    font-size: 2rem; /* Equivalent to 'larger' */
+    font-weight: 800;
+    margin-bottom: 10px; /* Optional: Adjust margin as needed */
+}
+
+h3 {
+    font-size: 1.5rem; /* Equivalent to 'large' */
+    font-style: italic;
+    font-weight: 500;
+    margin-bottom: 5px; /* Optional: Adjust margin as needed */
 }

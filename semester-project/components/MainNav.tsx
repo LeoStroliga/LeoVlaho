@@ -1,5 +1,7 @@
 "use client";
 
+"use client";
+
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { cn } from "@/lib/utils";
@@ -8,17 +10,16 @@ import { Page } from "@/components/NavBar";
 const MainNav = ({ pages }: { pages: Page[] }) => {
   const pathname = usePathname();
   return (
-    <nav className="hidden lg:flex items-center justify-center p-4">
-      <ul className="flex gap-2">
+    <nav className="w-full">
+      <ul className="flex flex-col lg:flex-row gap-2 lg:gap-4 items-center lg:justify-end">
         {pages.map(({ href, title }) => (
-          <li key={href}>
+          <li key={href} className="w-full lg:w-auto">
             <Link href={href}>
               <span
                 className={cn(
-                  "uppercase whitespace-nowrap font-roboto-condensed text-base px-5 py-3 rounded-sm text-brand-purple-900 hover:bg-brand-purple-200",
+                  "block uppercase whitespace-nowrap font-roboto-condensed text-base px-5 py-3 rounded-sm text-green-900 hover:bg-green-200",
                   {
-                    "bg-purple-700 text-brand-purple-100 pointer-events-none":
-                      pathname === href,
+                    "bg-green-700 text-green-100 pointer-events-none": pathname === href,
                   }
                 )}
               >
@@ -33,3 +34,5 @@ const MainNav = ({ pages }: { pages: Page[] }) => {
 };
 
 export default MainNav;
+
+

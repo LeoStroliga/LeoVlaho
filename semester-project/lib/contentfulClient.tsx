@@ -13,55 +13,10 @@ const gqlAllProductsQuery = `query gqlAllProductsQuery{
         url
       }
       categories
+      price
     }
   }
 }`;
-/*
-const getAllCategoriesQuery = `query {
-  categoryCollection {
-    items {
-      label
-      }
-    }
-  }`;
-  */
-/*
-interface CategoryCollectionResponse {
-    categoryCollection: {
-        items: TypeCategory[];
-    };
-}*/
-/*
-interface DetailProductResponse {
-  product: {
-    name: string;
-    imagesCollection: {
-      items: {
-        url: string;
-      }[];
-    };
-    richTextDescription: {
-      json: any;
-      links: any;
-    };
-    price: number;
-    currencyCode: "CHF" | "EUR" | "GBP" | "USD";
-    listed: boolean;
-    categories: {
-      label: TypeCategory["label"];
-    }[];
-    description: string;
-    heroImage: {
-      url: string;
-    };
-    categoriesCollection: {
-      items: {
-        label: TypeCategory["label"];
-      }[];
-    };
-  };
-}
-*/
 
  //kasnije
 const gqlProductByIdQuery = `query getProductById($productId: Int){
@@ -73,6 +28,28 @@ const gqlProductByIdQuery = `query getProductById($productId: Int){
         url
       }
       categories
+      price
+      imagesCollection{
+        items{
+          url
+        }
+      }
+    }
+  }
+}
+`;
+
+const gqlProductByCategoryQuery = `query getProductByCategory($productCategory: [String]){
+  webshopCollection(where:{categories_contains_some: $productCategory}){
+    items{
+      name
+      description
+      bannerImage{
+        url
+      }
+      categories
+      price
+      id
     }
   }
 }
@@ -93,6 +70,7 @@ interface ProductItem {
         url: string;
     };
     categories: string[];
+    price: number;
 };
 
 
@@ -123,6 +101,8 @@ interface DetailProductResponse {
             //       }[];
             //  };
             categories: string[];
+            price: number;
+            images: string[];
         };
     }
 }
@@ -134,7 +114,8 @@ const baseUrl = `https://graphql.contentful.com/content/v1/spaces/${contentfulId
 
 const getAllProducts = async (): Promise<TypeProductListItem[]> => {
     try {
-        console.log("prduct");
+      
+        console.log("getallproducts");
         const response = await fetch(baseUrl, {
             method: "POST",
             headers: {
@@ -151,15 +132,7 @@ const getAllProducts = async (): Promise<TypeProductListItem[]> => {
         };
        
         // Map the response to the format we want
-        /* const products: TypeProductListItem[] =
-           body.data.productCollection.items.map((item) => ({
-             id: item.sys.id,
-             name: item.name,
-             description: item.description,
-             heroImage: item.heroImage.url,
-             categories: item.categoriesCollection.items.map((category) => category),
-           }));*/
-
+     
         const products: TypeProductListItem[] =
             body.data.webshopCollection.items.map((item) => ({
                 id: item.id,
@@ -167,8 +140,11 @@ const getAllProducts = async (): Promise<TypeProductListItem[]> => {
                 description: item.description,
                 bannerImage: item.bannerImage.url,
                 categories: item.categories,
+                price: item.price
             }));
-
+            
+            console.log("getzallproducts")
+            console.log(products)
         return products;
     } catch (error) {
         console.log(error);
@@ -177,36 +153,6 @@ const getAllProducts = async (): Promise<TypeProductListItem[]> => {
         return [];
     }
 };
-/*
-const getAllCategories = async (): Promise<TypeCategory[]> => {
-  try {
-    const response = await fetch(baseUrl, {
-      method: "POST",
-      headers: {
-        "Content-Type": "application/json",
-      //  Authorization: `Bearer ${process.env.CONTENTFUL_ACCESS_TOKEN}`,
-        Authorization: `Bearer ${contentfulKey}`,
-      },
-      body: JSON.stringify({ query: getAllCategoriesQuery }),
-    });
-    const body = (await response.json()) as {
-      data: CategoryCollectionResponse;
-    };
-
-    const categories: TypeCategory[] = body.data.categoryCollection.items.map(
-      (item) => ({
-        label: item.label,
-      })
-    );
-
-    return categories;
-  } catch (error) {
-    console.log(error);
-
-    return [];
-  }
-};*/
-
 
 const getProductById = async (
     id: string
@@ -250,7 +196,7 @@ const getProductById = async (
             });
 
             // Assuming you want the name property of the first item in the array
-            const firstName = responseProduct[0].name;
+            const firstName = responseProduct[0];
             console.log(firstName);
             product = {
                 /*    id: id,
@@ -275,8 +221,12 @@ const getProductById = async (
 
                 description: responseProduct[0].description,
                 categories: responseProduct[0].categories.map((c: any) => c),
+                price: responseProduct[0].price,
+                images: responseProduct[0].imagesCollection.items.map((item: any) => item.url),
 
             };
+            product.images.unshift(product.bannerImage);
+            console.log(product);
         } else {
             console.error('responseProduct is not an array');
         }
@@ -317,9 +267,94 @@ const getProductById = async (
     }
 };
 
+
+
+const getProductByCategory = async (category:string): Promise<TypeProductListItem[]> => {
+    try {
+      //  console.log(category);
+      
+        const response = await fetch(baseUrl, {
+            method: "POST",
+            headers: {
+                "Content-Type": "application/json",
+                //  Authorization: `Bearer ${process.env.CONTENTFUL_ACCESS_TOKEN}`,
+                Authorization: `Bearer ${contentfulKey}`,
+            },
+            body: JSON.stringify({
+                query: gqlProductByCategoryQuery,
+                variables: { productCategory: category },
+            }),
+        });
+        const body = (await response.json()) as {
+            data: ProductCollectionResponse;
+        };
+        
+
+
+
+        // const responseProduct = body.data.product;
+
+        console.log("Category");
+          console.log(body.data.webshopCollection.items);
+        //  console.log(body.data.webshopCollection.items.name);
+
+
+       
+        const products: TypeProductListItem[] =
+            body.data.webshopCollection.items.map((item) => ({
+                
+                name: item.name,
+                description: item.description,
+                bannerImage: item.bannerImage.url,
+                categories: item.categories,
+                price: item.price,
+                id: item.id,
+            }));
+            
+    
+
+           
+      
+
+       
+
+        //  const product: TypeProductDetailItem = {
+        //      /*    id: id,
+        //          name: responseProduct.name,
+        //          images: responseProduct.imagesCollection.items.map((item) => item.url),
+        //          richTextDescription: responseProduct.richTextDescription,
+        //          price: responseProduct.price,
+        //          currencyCode: responseProduct.currencyCode,
+        //          listed: responseProduct.listed,
+        //          description: responseProduct.description,
+        //          categories: responseProduct.categoriesCollection.items.map((c) => c),
+        //            heroImage: responseProduct.heroImage.url,
+        //    */
+        //      id: id,
+        //      name: responseProduct.name,
+        //     bannerImage: responseProduct.bannerImage.url,
+        //     
+        //      //   richTextDescription: responseProduct.richTextDescription,
+        //      //    price: responseProduct.price,
+        //
+        //      //images: responseProduct.imagesCollection.items.map((item) => item.url),
+        //
+        //      description: responseProduct.description,
+        //      categories: responseProduct.categories.map((c)=>c),
+        //
+        //  };
+
+        return products;
+    } catch (error) {
+        console.log(error);
+
+        return [];
+    }
+};
+
 const contentfulService = {
     getAllProducts,
-    //getAllCategories,
+    getProductByCategory,
     getProductById,
 };
 

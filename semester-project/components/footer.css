@@ -1,10 +1,9 @@
 .section__padding{
     padding: 4rem 4rem;
 }
-.footer{
-    background-color: blueviolet;
+.footer {
+    background-color: #2F855A; /* Dark Green */
 }
-
 .sb__footer{
     display: flex;
     flex-direction: column;

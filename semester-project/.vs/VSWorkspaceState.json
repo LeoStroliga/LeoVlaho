@@ -4,14 +4,13 @@
     "\\app",
     "\\app\\(contentful)",
     "\\app\\(contentful)\\cms",
-    "\\app\\(contentful)\\cms\\_components",
-    "\\app\\blog",
-    "\\app\\blog\\[postId]",
-    "\\app\\SignIn",
-    "\\app\\SignIn\\Icons",
-    "\\app\\UserResources",
-    "\\components"
+    "\\app\\(contentful)\\cms\\FeaturedProducts",
+    "\\app\\(contentful)\\cms\\FeaturedProducts\\[category]",
+    "\\components",
+    "\\components\\ui",
+    "\\public",
+    "\\public\\hero"
   ],
-  "SelectedNode": "\\tsconfig.json",
+  "SelectedNode": "\\app\\(contentful)\\cms\\FeaturedProducts\\page.tsx",
   "PreviewInSolutionExplorer": false
 }

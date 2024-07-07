@@ -2,17 +2,17 @@ import * as React from "react";
 import { cn } from "@/lib/utils";
 
 const buttonVariants = {
-    default: "bg-slate-900 text-slate-50 hover:bg-slate-900/90 hover:text-slate-50",
-    destructive: "bg-red-500 text-slate-50 hover:bg-red-500/90 hover:text-slate-50",
-    outline: "border border-slate-200 bg-white hover:bg-slate-100 hover:text-slate-900",
-    secondary: "bg-slate-100 text-slate-900 hover:bg-slate-100/80 hover:text-slate-50",
-    ghost: "hover:bg-slate-100 hover:text-slate-900",
-    link: "text-slate-900 underline-offset-4 hover:underline",
-    emph: "bg-rose-500 text-slate-50 hover:bg-rose-500/90 hover:text-slate-50",
+    default: "bg-green-600 text-white hover:bg-green-700",
+    secondary: "bg-yellow-400 text-white hover:bg-yellow-500",
+    outline: "border border-green-600 text-green-600 bg-white hover:bg-green-50",
+    destructive: "bg-red-500 text-white hover:bg-red-600",
+    ghost: "hover:bg-green-100 text-green-600",
+    link: "text-green-600 underline-offset-4 hover:underline",
+    emph: "bg-green-400 text-white hover:bg-green-500",
 };
 
 const buttonSizes = {
-    default: "h-10 px-4 py-2",
+    default: "h-10 px-4 py-2 rounded-lg",
     sm: "h-9 rounded-md px-3",
     lg: "h-11 rounded-md px-8",
     icon: "h-10 w-10",

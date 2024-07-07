@@ -56,7 +56,7 @@ const AppRecipes = () => {
                 'Stir in chopped spinach and cook until wilted.',
                 'Serve over rice or quinoa.',
             ],
-            imageUrl: '/public/Pictures/Vegan-Chickpea-and-Spinach-Curry-720x720.jpeg',
+            imageUrl: '/Pictures/Vegan-Chickpea-and-Spinach-Curry.jpeg',
         },
         {
             title: 'Stuffed Bell Peppers with Quinoa and Black Beans',
@@ -78,7 +78,7 @@ const AppRecipes = () => {
                 'Stuff each bell pepper half with the quinoa mixture.',
                 'Place stuffed peppers in a baking dish and bake for 25-30 minutes or until peppers are tender.',
             ],
-            imageUrl: '/public/Pictures/quinoa-and-black-bean-stuffed-bell-peppers-topped.jpg',
+            imageUrl: '/Pictures/quinoa-and-black-bean-stuffed-bell-peppers-topped.jpg',
         },
         {
             title: 'Vegetarian Lentil Tacos',
@@ -100,7 +100,7 @@ const AppRecipes = () => {
                 'Stuff each bell pepper half with the quinoa mixture.',
                 'Place stuffed peppers in a baking dish and bake for 25-30 minutes or until peppers are tender.',
             ],
-            imageUrl: '/public/Pictures/Vegan-Lentil-Tacos_1.jpg',
+            imageUrl: '/Pictures/Vegan-Lentil-Tacos_6square.jpg',
         },
         {
             title: 'Mushroom and Spinach Stuffed Pasta Shells',
@@ -122,7 +122,7 @@ const AppRecipes = () => {
                 'Place the stuffed shells in a baking dish, cover with marinara sauce, and bake it for 30 minutes',
                 'until bubbly and golden.',
             ],
-            imageUrl: '/public/Pictures/wild-mushroom-spinach-stuffed-shells_0-c92fba3918f54643b6b324e7845685c2.jpg',
+            imageUrl: '/Pictures/wild-mushroom-spinach-stuffed-shells.jpg',
         }
         // Include the remaining recipes following the same structure
     ];

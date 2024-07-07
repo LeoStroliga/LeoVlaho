@@ -1,5 +1,6 @@
 import React from 'react'
 import './SignIn.css'
+import { Button } from "@/components/ui/button";
 
 const LoginForm = () => {
   return(
@@ -9,9 +10,7 @@ const LoginForm = () => {
       <input type="text" placeholder='Email'/>
       <input type="password" placeholder='Password'/>
 
-      <button className="login-btn" style={{color: "white"}}>
-        LOGIN
-      </button>
+      <Button variant="secondary">LOGIN</Button>
 
       
 
