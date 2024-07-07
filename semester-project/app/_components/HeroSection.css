@@ -1,10 +1,76 @@
+/* Global styles */
 body {
-    height: 100%;
-    margin: 0;
+  height: 100%;
+  margin: 0;
+}
+
+/* Container for the hero section */
+.hero-section {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 100vh;
+  padding: 0 20px;
+}
+
+/* Text content styles */
+.hero-text {
+  flex: 1; /* Ensure text takes remaining space */
+  max-width: 600px; /* Adjust max-width as needed */
+}
+
+.hero-text h1 {
+  font-size: 50px;
+  color: #2F855A;
+  font-weight: 900;
+}
+
+.hero-text p {
+  font-size: 20px;
+}
+
+/* Hero images grid styles */
+.hero-images {
+  flex-shrink: 0; /* Prevent images from shrinking */
+  margin-top: 20px; /* Add margin to separate from text on small screens */
+}
+
+.grid {
+  display: grid;
+}
+
+.grid-cols-2 {
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+
+.grid-rows-2 {
+  grid-template-rows: repeat(2, minmax(0, 1fr));
+}
+
+.gap-2 {
+  gap: 2rem;
+}
+
+/* Media query for small screens */
+@media (max-width: 768px) {
+  .hero-section {
+    flex-direction: column; /* Stack items vertically on small screens */
+    text-align: center; /* Center-align text content */
   }
-  
-  .container {
-    min-height: 100%;
-    display: flex;
-    flex-direction: row;
+
+  .hero-text {
+    margin-bottom: 20px; /* Add space between text and images */
   }
+
+  .hero-text h1 {
+    font-size: 40px; /* Reduce font size for h1 */
+  }
+
+  .hero-text p {
+    font-size: 16px; /* Reduce font size for paragraphs */
+  }
+
+  .hero-images {
+    display: none; /* Hide the hero images on small screens */
+  }
+}

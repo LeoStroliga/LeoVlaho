@@ -23,34 +23,6 @@ type Params = {
     category: string;
 };
 
-/*
-export interface HeroImageProps {
-    productName: string;
-    image?: string;
-    className?: string;
-}
-
-export const HeroImage = ({
-    image,
-    productName,
-    className,
-}: HeroImageProps) => {
-    if (!image) return null;
-
-    return (
-        <div className={cn("relative w-96 h-60", className)}>
-            <Image
-                src={image}
-                fill
-                style={{ objectFit: "cover" }}
-                className="rounded-md hover:opacity-70"
-                sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw"
-                alt={productName || "product"}
-            />
-        </div>
-    );
-};
-*/
 const ProductCard: FC<TypeProductListItem> = ({
     name,
     description,
@@ -59,7 +31,7 @@ const ProductCard: FC<TypeProductListItem> = ({
     categories,
     price
 
-}) => ( <Link href={`${categories[0]}/${id}`}>
+}) => ( <Link style={{ color: '#2F855A', marginTop: '4rem' }}href={`${categories[0]}/${id}`}>
         <Card className="w-fit hover:opacity-70">
        
         <CardContent className="mt-6">
@@ -77,7 +49,7 @@ const ProductCard: FC<TypeProductListItem> = ({
             
             </CardContent>
             <CardHeader>
-                <CardTitle className="text-green-600">{name}</CardTitle>
+                <CardTitle className="text-green-700">{name}</CardTitle>
 
             </CardHeader>
             <CardFooter>
@@ -104,7 +76,7 @@ console.log("tet");
     return (
         
         <main className="container flex flex-col items-center gap-10">
-            <h1 className="font-roboto-condensed text-6xl font-extrabold text-green-900 my-4">
+            <h1 className="font-roboto-condensed text-6xl font-extrabold text-green-700 my-4">
                 {params.category.charAt(0).toUpperCase() + params.category.slice(1)}
             </h1>
 

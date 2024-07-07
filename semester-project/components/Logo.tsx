@@ -15,7 +15,7 @@ const Logo: FC = () => (
             height={50}
     />
 
-    <span style={{color: "green", fontSize: "40px", fontWeight: "900"}}>
+    <span style={{color: "#2F855A", fontSize: "40px", fontWeight: "900"}}>
       Vego
     </span>
   </div>

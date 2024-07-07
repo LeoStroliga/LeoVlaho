@@ -1,22 +1,8 @@
 "use client";
 import Image from "next/image";
 import { Button } from "@/components/ui/button";
-import { Badge } from "@/components/ui/badge";
 import { useEffect, useState } from 'react';
-//import {
-//    CommonNode,
-//    documentToReactComponents,
-//} from "@contentful/rich-text-react-renderer";
-//import { BLOCKS } from "@contentful/rich-text-types";
-//
-//import hljs from "highlight.js/lib/core";
-//import javascript from "highlight.js/lib/languages/javascript";
-//import python from "highlight.js/lib/languages/python";
-//import "highlight.js/styles/github-dark.css";
-//import { RichTextLinksFragment } from "@/marketing-web/app/gql/graphql";
 import contentfulService from "@/lib/contentfulClient";
-import CmsPage from "../page";
-
 
 interface ProductPageProps {
     params: {
@@ -55,16 +41,17 @@ const ProductPage: React.FC<ProductPageProps> = ({ params }) => {
 
     return (
         <main className="container flex flex-col items-center gap-10 mb-10">
-            <div className="grid grid-cols-2 gap-4 w-3/4 relative">
-                <div className="relative w-full h-[400px]">
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-4 w-full md:w-3/4">
+                {/* Image section */}
+                <div className="relative w-full h-[400px] md:h-[500px] order-2 md:order-1 mx-4 md:mx-0">
                     <div
-                        className="absolute top-1/2 transform -translate-y-1/2 left-4 cursor-pointer text-rose-500 font-bold text-3xl"
+                        className="absolute top-1/2 transform -translate-y-1/2 left-4 cursor-pointer text-rose-500 font-bold text-3xl z-10"
                         onClick={prevImage}
                     >
                         &lt;
                     </div>
                     <div
-                        className="absolute top-1/2 transform -translate-y-1/2 right-4 cursor-pointer text-rose-500 font-bold text-3xl"
+                        className="absolute top-1/2 transform -translate-y-1/2 right-4 cursor-pointer text-rose-500 font-bold text-3xl z-10"
                         onClick={nextImage}
                     >
                         &gt;
@@ -79,18 +66,12 @@ const ProductPage: React.FC<ProductPageProps> = ({ params }) => {
                     />
                 </div>
 
-                <div className="flex flex-col gap-4 justify-between">
-                   
-                        <div className="col-span-1 text-left">
-                            <h1 className="text-4xl font-bold text-green-900">{product.name}</h1>
-                            <h2 className="text-2xl font-bold">Price: {product.price} $</h2>
-                        </div>
-                        
-                   
-                    <div className="flex flex-col">
-                        <div className="mb-2">{product.description}</div>
-                        <Button variant="secondary">+ Add to cart</Button>
-                    </div>
+                {/* Name, Price, and Description section */}
+                <div className="md:col-span-1 flex flex-col justify-center gap-4 order-1 md:order-2 mx-4 md:mx-0">
+                    <h1 className="text-4xl font-bold text-green-700">{product.name}</h1>
+                    <h2 className="text-2xl font-bold">Price: {product.price} $</h2>
+                    <div className="mb-2">{product.description}</div>
+                    <Button variant="secondary" className="mt-4 md:mt-0">+ Add to cart</Button>
                 </div>
             </div>
         </main>

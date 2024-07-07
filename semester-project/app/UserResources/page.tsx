@@ -132,11 +132,10 @@ const AppRecipes = () => {
             ],
             imageUrl: '/Pictures/wild-mushroom-spinach-stuffed-shells.jpg',
         }
-        // Include the remaining recipes following the same structure
     ];
 
     return (
-        <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center' }}>
+        <div className="App">
             <RecipeTitle />
             {recipes.map((recipe, index) => (
                 <RecipeContainer
@@ -152,4 +151,3 @@ const AppRecipes = () => {
 };
 
 export default AppRecipes;
-

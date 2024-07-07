@@ -19,34 +19,25 @@ const images: HeroImageObject[] = [
 ];
 
 const HeroSection = () => (
-  <section style={{display:"flex", justifyContent: "space-between", alignItems: "center", height: "100vh", padding: "0 20px"}}>
-    <div className="flex flex-col justify-start gap-5 max-w-xl">
-      <span>
-      <h1 style={{fontSize: "50px", color: "#2F855A", alignItems: "end", fontWeight:"900"}}>
-      Embark on a Journey of Flavor, Mindfulness, and Sustainability
-      </h1>
-      </span>
-      <span>
-
-      
-      <p style={{fontSize: "20px"}}>
-      Join the experience that harmonizes diverse tastes, inner serenity, and eco-conscious choices, 
-      guiding you towards a more flavorful, mindful, and sustainable way of living.
-      Explore a World of Delectable Vegetarian Creations, Cultivate Inner Peace, and Embrace Ethical Living.
-
+  <section className="hero-section">
+    <div className="hero-text">
+      <h1>Embark on a Journey of Flavor, Mindfulness, and Sustainability</h1>
+      <p>
+        Join the experience that harmonizes diverse tastes, inner serenity, and eco-conscious choices, 
+        guiding you towards a more flavorful, mindful, and sustainable way of living.
+        Explore a World of Delectable Vegetarian Creations, Cultivate Inner Peace, and Embrace Ethical Living.
       </p>
-      </span>
     </div>
-    <div className="flex-shrink-0">
-      <div className="grid grid-cols-2 grid-rows-2 gap-2 grow">
+    <div className="hero-images">
+      <div className="grid grid-cols-2 grid-rows-2 gap-2">
         {images.map((imageObj, index) => (
           <div key={index} className="relative h-52 w-52">
             <Image
               src={imageObj.image}
               alt={`Hero image ${index + 1}`}
-              fill
+              layout="fill"
+              objectFit="cover"
               style={{
-                objectFit: "cover",
                 borderRadius: `${imageObj.borderRadius}`,
               }}
             />
