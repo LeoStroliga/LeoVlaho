@@ -14,7 +14,6 @@ import { useEffect, useState } from 'react';
 //import python from "highlight.js/lib/languages/python";
 //import "highlight.js/styles/github-dark.css";
 //import { RichTextLinksFragment } from "@/marketing-web/app/gql/graphql";
-import { HeroImage } from "../page";
 import contentfulService from "@/lib/contentfulClient";
 import CmsPage from "../page";
 

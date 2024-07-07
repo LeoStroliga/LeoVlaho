@@ -23,7 +23,7 @@ type Params = {
     category: string;
 };
 
-
+/*
 export interface HeroImageProps {
     productName: string;
     image?: string;
@@ -50,7 +50,7 @@ export const HeroImage = ({
         </div>
     );
 };
-
+*/
 const ProductCard: FC<TypeProductListItem> = ({
     name,
     description,
