@@ -42,7 +42,6 @@ const ProductPage: React.FC<ProductPageProps> = ({ params }) => {
     return (
         <main className="container flex flex-col items-center gap-10 mb-10">
             <div className="grid grid-cols-1 md:grid-cols-2 gap-4 w-full md:w-3/4">
-                {/* Image section */}
                 <div className="relative w-full h-[400px] md:h-[500px] order-2 md:order-1 mx-4 md:mx-0">
                     <div
                         className="absolute top-1/2 transform -translate-y-1/2 left-4 cursor-pointer text-rose-500 font-bold text-3xl z-10"
@@ -66,7 +65,6 @@ const ProductPage: React.FC<ProductPageProps> = ({ params }) => {
                     />
                 </div>
 
-                {/* Name, Price, and Description section */}
                 <div className="md:col-span-1 flex flex-col justify-center gap-4 order-1 md:order-2 mx-4 md:mx-0">
                     <h1 className="text-4xl font-bold text-green-700">{product.name}</h1>
                     <h2 className="text-2xl font-bold">Price: {product.price} $</h2>
