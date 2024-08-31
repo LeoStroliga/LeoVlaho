@@ -1,0 +1,102 @@
+.App {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px; /* Add padding to the entire app */
+}
+
+.RecipeContainer {
+    width: 100%;
+    margin-bottom: 20px; /* Add bottom margin for separation */
+    border: 1px solid #ddd;
+    padding: 15px;
+    box-sizing: border-box;
+    display: flex;
+    flex-wrap: wrap; /* Ensure items wrap to new line on smaller screens */
+    align-items: flex-start; /* Align items to start at the top */
+}
+
+.image-container {
+    flex: 0 0 200px; /* Set a fixed width for the image container */
+    max-width: 200px; /* Limit maximum width of image container */
+    margin-right: 20px; /* Add margin to separate image from text */
+    position: relative;
+    height: 200px; /* Set a fixed height for the image container */
+}
+
+.image-wrapper {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    border-radius: 8px; /* Rounded corners for the image */
+    overflow: hidden; /* Ensure image stays within container */
+}
+
+.recipe-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 8px; /* Rounded corners for the image */
+}
+
+.text-content {
+    flex: 1; /* Take remaining space */
+    padding: 10px 20px; /* Add padding to text content */
+}
+
+/* Typography */
+h1 {
+    font-size: 2rem; /* Equivalent to 'larger' */
+    font-weight: 500;
+    margin-bottom: 10px; /* Optional: Adjust margin as needed */
+}
+
+h3 {
+    font-size: 1.5rem; /* Equivalent to 'large' */
+    font-style: italic;
+    font-weight: 500;
+    margin-bottom: 5px; /* Optional: Adjust margin as needed */
+}
+
+/* Media Queries */
+@media (max-width: 768px) {
+    .RecipeContainer {
+        flex-direction: column; /* Stack items vertically on smaller screens */
+    }
+
+    .image-container {
+        flex: 1 0 auto; /* Allow image container to grow and shrink based on content */
+        max-width: 100%; /* Ensure image container adjusts to full width of parent */
+        height: auto; /* Let the height be determined by the content */
+        margin-bottom: 10px; /* Add space below image container */
+    }
+
+    .text-content {
+        padding: 10px 20px; /* Add padding to text content */
+        text-align: center; /* Center align text content */
+    }
+
+    h1 {
+        font-size: 1.5rem; /* Decrease header size on smaller screens */
+    }
+
+    h3 {
+        font-size: 1.2rem; /* Decrease subheader size on smaller screens */
+    }
+}
+
+@media (min-width: 1024px) {
+    .image-container {
+        flex: 0 0 300px; /* Increase image container width on larger screens */
+        max-width: 300px;
+        height: 300px; /* Adjust image container height */
+    }
+
+    h1 {
+        font-size: 2.5rem; /* Increase header size on larger screens */
+    }
+
+    h3 {
+        font-size: 1.8rem; /* Increase subheader size on larger screens */
+    }
+}
