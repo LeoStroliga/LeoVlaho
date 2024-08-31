@@ -3,12 +3,7 @@ import RecipeTitle from './Title';
 import Image from 'next/image';
 import './UR.css';
 
-interface Recipe {
-    title: string;
-    ingredients: string[];
-    instructions: string[];
-    imageUrl: string;
-}
+
 
 const RecipeContainer: React.FC<Recipe> = ({ title, ingredients, instructions, imageUrl }) => (
     <div className="RecipeContainer">
