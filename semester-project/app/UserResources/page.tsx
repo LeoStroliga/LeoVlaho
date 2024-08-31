@@ -1,4 +1,4 @@
-﻿import React from 'react';
+import React from 'react';
 import RecipeTitle from './Title';
 import Image from 'next/image';
 import './UR.css';
