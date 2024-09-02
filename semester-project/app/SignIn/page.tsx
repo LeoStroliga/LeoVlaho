@@ -10,12 +10,12 @@ const LoginForm = () => {
       <input type="text" placeholder='Email'/>
       <input type="password" placeholder='Password'/>
 
-      <Button variant="secondary">LOGIN</Button>
+      <Button variant="secondary">SIGN IN</Button>
 
       
 
 
-      <p className="text">OR LOGIN USING</p>
+      <p className="text">OR SIGN IN USING</p>
       <div className="alt-login">
         <div className="facebook"></div>
         <div className="instagram"></div>

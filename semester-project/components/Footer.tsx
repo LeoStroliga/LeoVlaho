@@ -52,7 +52,6 @@ const Footer=()=>{
                         items={[
                                 "Home",
                                 "Featured Products",
-                                "Special Offers",
                                 "User Resources",
                                 "Sign In",
                                 ]}
